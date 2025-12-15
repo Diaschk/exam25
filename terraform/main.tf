@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "sg" {
-  name = "security-group2"
+  name = "security-group3"
 
 
   ingress {
