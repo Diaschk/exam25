@@ -53,7 +53,7 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "exam25"
+    Name = "exam26"
   }
 }
 
