@@ -101,11 +101,11 @@ jobs:
         push: true
         tags: |
          ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
-         ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
+         ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.run_number }}
 
     - name: Verify push
       run: |
         echo "Образ успішно завантажено на DockerHub!"
         echo "Теги:"
         echo "  - ${{ secrets.DOCKERHUB_USERNAME }}/app:latest"
-        echo "  - ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}"
+        echo "  - ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.run_number }}"
