@@ -100,8 +100,8 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
+         ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
+         ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
 
     - name: Verify push
       run: |
