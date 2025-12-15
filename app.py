@@ -8,11 +8,9 @@ def main():
      
         a1 = 2
         d = 2
-        
 
         sum_formula = n * (2 * a1 + (n - 1) * d) // 2
         
-    
         sum_loop = 0
         progression = [] 
         
