@@ -68,7 +68,7 @@ resource "aws_instance" "server" {
 
 
   tags = {
-    Name = "exam25"
+    Name = "exam26"
   }
 
   user_data = <<-EOF
