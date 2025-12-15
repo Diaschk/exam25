@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "sg" {
-  name = "security-group"
+  name = "security-group1"
 
 
   ingress {
@@ -53,7 +53,7 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "exam26"
+    Name = "exam25"
   }
 }
 
@@ -68,7 +68,7 @@ resource "aws_instance" "server" {
 
 
   tags = {
-    Name = "exam26"
+    Name = "exam25"
   }
 
   user_data = <<-EOF
